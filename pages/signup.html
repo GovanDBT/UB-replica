@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Poppins:wght@300;400;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6f879d6c21.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navigation-menu">
+            <nav class="nav nav-hero collapsible container">
+                <a href="../index.html"><img class="nav-logo" src="../images/ub-logo.png"
+                        alt="University of Botswana logo"></a>
+                <i class="fa-solid fa-bars-staggered nav-toggler"></i>
+                <div class="nav-list-container">
+                    <ul class="list nav-list collapsible-content">
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Research</a></li>
+                        <li><a href="#">Experience</a></li>
+                        <li><a href="#">Discover</a></li>
+                        <li><a href="#">Study Here</a></li>
+                        <li class="btn btn-primary btn-nav"><a href="./login.html">Login</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="form container">
+        <div>
+            <div class="form_header">
+                <h3 class="form_title">Ready to start your success?</h3>
+                <p class="form_description">Signup to our website to start your journey at the University of Botswana</p>
+            </div>
+            <form class="form_box" action="">
+                <div class="form_group">
+                    <label>Username</label><br>
+                    <input type="text" name="username">
+                </div>
+                <div class="form_group">
+                    <label>Email</label><br>
+                    <input type="email" name="email">
+                </div>
+                <div class="form_group">
+                    <label>Password</label><br>
+                    <input type="password" name="password">
+                </div>
+                <div class="form_group">
+                    <label>Confirm Password</label><br>
+                    <input type="password" name="confirm_password">
+                </div>
+                <div class="checkbox">
+                    <div>
+                        <input type="checkbox" id="terms" name="terms" value="Terms and Conditions">
+                        <label for="terms">By Signing up you agree to our <a href="#">Terms and Conditions</a></label>
+                    </div>
+                </div>
+                <input class="btn btn-primary" type="submit" value="Sign Up">
+            </form>
+            <p class="login">Already have an account? <a class="login_btn" href="./login.html">Login</a></p>
+        </div>
+        <div class="form_banner">
+            <img src="../images/Signup.svg" alt="" srcset="">
+        </div>
+    </section>
+    <script src="../JS/main.js"></script>
+</body>
+
+</html>
