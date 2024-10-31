@@ -93,6 +93,13 @@ a:visited {
     color: var(--primary-color);
 }
 
+/* Error Messages */
+
+.errors {
+    font-size: 1.4rem;
+    color: red;
+}
+
 /* Lists */
 
 .list {
@@ -474,5 +481,65 @@ a:visited {
 
     .form_banner {
         display: initial;
+    }
+}
+
+/* Application form */
+
+.application_form .form_box {
+    padding: 0;
+}
+
+.application_form .form_group {
+    width: 100%;
+    padding: 1rem;
+}
+
+.application_form fieldset {
+    padding: 0;
+    border: none;
+    width: 100%;
+}
+
+legend {
+    background-color: var(--primary-color);
+    color: #fff !important;
+    padding: 1rem 1.5rem !important;
+    width: 100%;
+}
+
+.form_group select {
+    outline: none;
+    font-size: 1.7rem;
+    padding: 1rem 0.1rem;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.form_group option:checked {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.form_group input[type="file"] {
+    border: none;
+    padding: 1rem 0;
+}
+
+input::file-selector-button {
+    color: #fff;
+    padding: 0.5em;
+    background-color: var(--primary-color);
+    border-radius: 3px;
+    outline: none;
+    border: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .application_form fieldset {
+        display: grid;
+        grid-template: auto / 50fr 50fr;
+        gap: 2rem 4rem;
     }
 }
